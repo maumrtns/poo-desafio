@@ -1,5 +1,10 @@
+package Celular;
 
-public class iphone implements ReprodutorMusical, NavegadorInternet, AparelhoTelefonico {
+import Celular.Opera.NavegadorInternet;
+import Celular.Spotify.ReprodutorMusical;
+import Celular.Telefone.AparelhoTelefonico;
+
+public class iPhone implements ReprodutorMusical, NavegadorInternet, AparelhoTelefonico {
 
     // Metodos para o Reprodutor Musical!
     public void tocar() {
@@ -14,7 +19,7 @@ public class iphone implements ReprodutorMusical, NavegadorInternet, AparelhoTel
         System.out.println("Selecionando música: " + musica);
     }
 
-    // Metodos para o Aparelho Telefonico
+    // Metodos para o Aparelho Telefonico!
     public void ligar(String ligar) {
         System.out.println("Ligando para: " + ligar);
     }
@@ -27,16 +32,17 @@ public class iphone implements ReprodutorMusical, NavegadorInternet, AparelhoTel
         System.out.println("Iniciando correios de voz");
     }
 
-    // Metodos para o Navegador de internet
+    // Metodos para o Navegador de internet!
     public void exibirPagina(String url) {
         System.out.println("Exibindo página:" + url);
     }
 
-    public void adcionarNovaAba() {
-        System.out.println("Adicionando página");
+    public void adicionarNovaAba() {
+        System.out.println("Adicionando nova aba");
     }
 
     public void atualizarPagina() {
         System.out.println("Atualizando página");
     }
+
 }
